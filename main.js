@@ -19,7 +19,7 @@ function tulis(text, c) {
       clearInterval(int)
       clearTimeout(tim)
       tim = setTimeout(_ => {
-				if (c === 1) return
+        if (c === 1) return
         t.style.visibility = "hidden";
         if (typeof(c) === "function") c()
       }, 2000)
