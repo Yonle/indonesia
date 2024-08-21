@@ -12,7 +12,7 @@ function tulis(text, c) {
   text = text.split("")
   curText = "";
   t.innerText = curText
-  
+
   int = setInterval(() => {
     let p = text.shift();
     if (!p) {
@@ -40,7 +40,16 @@ function awalan() {
     let int = setInterval(() => {
       if (op < 0.1) {
         clearInterval(int)
-        tulis("Merdeka", 1)
+        tulis("Merdeka", _ => setTimeout(_ => {
+					t.style.visibility = "visible";
+					img.src = "pki.svg"
+					img.onload = _ => {
+						img.style.opacity = 1
+						t.style.opacity = 1
+						document.body.style.background = "darkred"
+						t.innerText = "M A L A N G N Y A !"
+					}
+				}, 3000))
         return
       }
       op -= 0.1
