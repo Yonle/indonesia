@@ -1,0 +1,19 @@
+body {
+  background: black;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+}
+
+img {
+  text-align: center;
+  margin-top: 35vh;
+  width: 150px;
+  opacity: 0.5;
+}
+
+#t {
+  margin-top: 90vh;
+  text-align: center;
+  opacity: 0.7;
+}
